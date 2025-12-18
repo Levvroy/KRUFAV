@@ -1,0 +1,154 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Mario-themed vintage scrapbook color palette */
+:root {
+  --background: oklch(0.95 0.02 80);
+  --foreground: oklch(0.25 0.05 50);
+  --card: oklch(0.92 0.03 75);
+  --card-foreground: oklch(0.25 0.05 50);
+  --popover: oklch(0.95 0.02 80);
+  --popover-foreground: oklch(0.25 0.05 50);
+  --primary: oklch(0.55 0.22 25);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.55 0.18 250);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.88 0.02 75);
+  --muted-foreground: oklch(0.45 0.03 50);
+  --accent: oklch(0.75 0.18 85);
+  --accent-foreground: oklch(0.25 0.05 50);
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.75 0.05 60);
+  --input: oklch(0.88 0.02 75);
+  --ring: oklch(0.55 0.22 25);
+  --radius: 0.5rem;
+
+  /* Mario-specific colors */
+  --mario-red: oklch(0.55 0.22 25);
+  --mario-blue: oklch(0.55 0.18 250);
+  --mario-gold: oklch(0.8 0.15 85);
+  --mario-green: oklch(0.55 0.15 145);
+  --paper-cream: oklch(0.92 0.03 75);
+  --paper-aged: oklch(0.88 0.04 70);
+  --sepia-brown: oklch(0.35 0.06 55);
+}
+
+@theme inline {
+  --font-sans: "Caveat", "Caveat Fallback", cursive;
+  --font-mono: "Press Start 2P", "Press Start 2P Fallback", monospace;
+  --font-serif: "Permanent Marker", "Permanent Marker Fallback", cursive;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Vintage paper textures */
+.paper-texture {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+}
+
+.aged-paper {
+  background: linear-gradient(135deg, oklch(0.92 0.03 75) 0%, oklch(0.88 0.04 70) 50%, oklch(0.85 0.05 65) 100%);
+}
+
+/* Page curl shadow */
+.page-shadow {
+  box-shadow: inset -20px 0 30px -15px rgba(0, 0, 0, 0.15), 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Handwriting animation */
+@keyframes handwrite {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Mario coin spin */
+@keyframes coinSpin {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.1);
+  }
+}
+
+/* Float animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Wiggle animation for stickers */
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+/* Page turn animation */
+@keyframes pageTurn {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-180deg);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-coin-spin {
+  animation: coinSpin 0.6s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s ease-in-out;
+}
