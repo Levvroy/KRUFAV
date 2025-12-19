@@ -155,33 +155,33 @@ export const pageContents: PageContent[] = [
     // Left page: Instagram posts
     leftPhotos: [
       {
-        src: "/KRUFAV/assets/img/ig1.jpg",
+        src: "/KRUFAV/assets/img/ig1.jpeg",
         alt: "Instagram Post 1",
         variant: "frameless",
         rotation: 2,
         link: "https://www.instagram.com/p/DDMdjVQyjYT/?img_index=1",
       },
       {
-        src: "/KRUFAV/assets/img/ig2.jpg",
+        src: "/KRUFAV/assets/img/ig2.jpeg",
         alt: "Instagram Post 2",
         variant: "frameless",
         rotation: -2,
         link: "https://www.instagram.com/p/C1_OhDCpIXn/",
       },
     ],
-    leftText: ["and many more"],
+    leftText: ["dan masih banyak lagi"],
 
     // Right page: Favorite food
     rightText: ["Makanan Favorit: Indomie", "", "Makanan ga suka: Jeroan, daging kambing"],
     rightPhotos: [
       {
-        src: "/KRUFAV/assets/img/ind1.jpeg",
+        src: "/KRUFAV/assets/img/ind1.jpg",
         alt: "Indomie",
         variant: "polaroid",
         rotation: -5,
       },
       {
-        src: "/KRUFAV/assets/img/ind2.jpeg",
+        src: "/KRUFAV/assets/img/ind2.jpg",
         alt: "indomie 2",
         variant: "polaroid",
         rotation: 4,
