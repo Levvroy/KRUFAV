@@ -59,7 +59,7 @@ export const pageContents: PageContent[] = [
 
     // Left page: Personal biodata with profile photo
     leftPhoto: {
-      src: "/placeholder.svg?height=300&width=300",
+      src: "assets/img/p3.jpg",
       alt: "Mochammad Hanan Rais F.",
       caption: "That's me!",
       variant: "polaroid",
@@ -75,7 +75,7 @@ export const pageContents: PageContent[] = [
     // Right page: Journey with 1 photo 1:1 with photostrap
     rightPhotos: [
       {
-        src: "/placeholder.svg?height=400&width=400",
+        src: "assets/img/p4.jpg",
         alt: "LFM Journey",
         variant: "polaroid",
         rotation: 2,
@@ -107,7 +107,7 @@ export const pageContents: PageContent[] = [
     // Left page: Activities with 1 photo 1:1
     leftPhotos: [
       {
-        src: "/placeholder.svg?height=400&width=400",
+        src: "assets/img/p6.jpg",
         alt: "LFM Activities",
         variant: "polaroid",
         rotation: -2,
@@ -122,7 +122,7 @@ export const pageContents: PageContent[] = [
     // Right page: Memorable with 1 photo 16:9
     rightPhotos: [
       {
-        src: "/placeholder.svg?height=300&width=533",
+        src: "assets/img/p7.jpg",
         alt: "Memorable moment",
         variant: "polaroid",
         rotation: -3,
@@ -155,14 +155,14 @@ export const pageContents: PageContent[] = [
     // Left page: Instagram posts
     leftPhotos: [
       {
-        src: "/placeholder.svg?height=440&width=352",
+        src: "assets/img/ig1.jpg",
         alt: "Instagram Post 1",
         variant: "frameless",
         rotation: 2,
         link: "https://www.instagram.com/p/DDMdjVQyjYT/?img_index=1",
       },
       {
-        src: "/placeholder.svg?height=440&width=352",
+        src: "assets/img/ig2.jpg",
         alt: "Instagram Post 2",
         variant: "frameless",
         rotation: -2,
@@ -175,14 +175,14 @@ export const pageContents: PageContent[] = [
     rightText: ["Makanan Favorit: Indomie", "", "Makanan ga suka: Jeroan, daging kambing"],
     rightPhotos: [
       {
-        src: "/placeholder.svg?height=400&width=400",
+        src: "assets/img/ind1.jpeg",
         alt: "Indomie",
         variant: "polaroid",
         rotation: -5,
       },
       {
-        src: "/placeholder.svg?height=400&width=400",
-        alt: "Food I don't like",
+        src: "assets/img/ind2.jpeg",
+        alt: "indomie 2",
         variant: "polaroid",
         rotation: 4,
       },
@@ -201,13 +201,13 @@ export const pageContents: PageContent[] = [
     leftText: ["tempat makan favorit: Muji, dan semacam angkringan"],
     leftPhotos: [
       {
-        src: "/placeholder.svg?height=400&width=400",
+        src: "assets/img/tf1.jpeg",
         alt: "Muji",
         variant: "polaroid",
         rotation: -4,
       },
       {
-        src: "/placeholder.svg?height=400&width=400",
+        src: "assets/img/p1.jpg",
         alt: "Angkringan",
         variant: "polaroid",
         rotation: 3,
@@ -216,7 +216,7 @@ export const pageContents: PageContent[] = [
 
     // Right page: Large centered photo with message and larger footer
     centerPhoto: {
-      src: "/placeholder.svg?height=400&width=400",
+      src: "assets/img/p2.jpg",
       alt: "Message",
       caption: "Nyakrunya dinikmati aja",
       variant: "polaroid",
